@@ -47,11 +47,13 @@ class MainActivity : ComponentActivity() {
                             title = { Text("Learning Contract") }
                         )
                     }
+                ) { innerPadding ->
                     Column(
                         modifier = Modifier
                             .padding(innerPadding)
+                            .padding(horizontal = 16.dp)
                             .verticalScroll(rememberScrollState()),
-                        verticalArrangement = Arrangement.spacedBy(16.dp)
+                        verticalArrangement = Arrangement.spacedBy(16.dp),
                     ) {
                         learningContractPoints.forEach { (title, points) ->
                             LearningContractCard(
