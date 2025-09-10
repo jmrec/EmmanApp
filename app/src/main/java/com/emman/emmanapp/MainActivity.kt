@@ -48,7 +48,6 @@ class MainActivity : ComponentActivity() {
                                 bulletPoints = points,
                                 modifier = Modifier
                                     .fillMaxWidth()
-                                    .border(width = 2.dp, color = Color.Red)
                             )
                         }
                     }
