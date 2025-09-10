@@ -15,3 +15,6 @@ val CardBackgroundDark = Color(0xFF2A2E34)
 
 val MembersCardLight = Color(0xFFE0E8F0)
 val MembersCardDark = Color(0xFF38404D)
+
+val BorderLightGreen = Color(0xFF508E54)
+val BorderDarkGreen = Color(0xFF8BC34A)

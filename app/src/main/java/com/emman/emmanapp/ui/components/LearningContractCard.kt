@@ -2,6 +2,7 @@ package com.emman.emmanapp.ui.components
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -16,6 +17,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import com.emman.emmanapp.ui.theme.BorderDarkGreen
+import com.emman.emmanapp.ui.theme.BorderLightGreen
 
 @Composable
 fun LearningContractCard(
@@ -24,10 +27,16 @@ fun LearningContractCard(
     modifier: Modifier = Modifier,
     cardColor: Color = MaterialTheme.colorScheme.surfaceVariant
 ) {
+    val borderColor = if (isSystemInDarkTheme()) {
+        BorderDarkGreen
+    } else {
+        BorderLightGreen
+    }
+
     Card(
         modifier = modifier,
         shape = RoundedCornerShape(16.dp),
-        border = BorderStroke(2.dp, Color.Red),
+        border = BorderStroke(2.dp, borderColor),
         elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
         colors = CardDefaults.cardColors(
             containerColor = cardColor
