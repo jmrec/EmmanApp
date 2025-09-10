@@ -8,34 +8,34 @@
     <string name="members_title">Members</string>
 
     <string-array name="expectations">
-        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac ante efficitur, rhoncus purus et, cursus justo. Etiam in dui non eros fringilla tempus nec.</item>
-        <item>second</item>
-        <item>third</item>
-        <item>fourth</item>
+        <item>We expect to gain more knowledge and understanding that I can apply in both academic and real life.</item>
+        <item>We expect to have fun and understand the lessons that will be taught.</item>
+        <item>I expect this course to be challenging but also rewarding.</item>
+        <item>I also expect to improve my skills and become more confident in applying what I learn.</item>
         <item>fifth</item>
     </string-array>
 
     <string-array name="contributions">
-        <item>first</item>
-        <item>second</item>
-        <item>third</item>
-        <item>fourth</item>
+        <item>I will give my effort in completing assignments and projects on time.</item>
+        <item>I will always listen, attend my classes and pass the requirements.</item>
+        <item>I will participate and contribute to group activities, and communicate properly.</item>
+        <item>I will help organize group work and ensure everyone participates.</item>
         <item>fifth</item>
     </string-array>
 
     <string-array name="motivations">
-        <item>first</item>
-        <item>second</item>
-        <item>third</item>
-        <item>fourth</item>
+        <item>I am motivated by my goal to succeed academically and personally.</item>
+        <item>I am motivated because of our family\'s financial status</item>
+        <item>I am motivated to pass this course with a satisfactory grade so I can graduate on time.</item>
+        <item>I am motivated by my dream to have a stable and fulfilling career in the future.</item>
         <item>fifth</item>
     </string-array>
 
     <string-array name="hindrances">
-        <item>first</item>
-        <item>second</item>
-        <item>third</item>
-        <item>fourth</item>
+        <item>I sometimes struggle with time management because of different responsibilities.</item>
+        <item>I love sleeping.</item>
+        <item>I also acknowledge that I have many hobbies that may distract me from being productive.</item>
+        <item>Sometimes unexpected events or personal problems may also affect my focus and performance.</item>
         <item>fifth</item>
     </string-array>
 
