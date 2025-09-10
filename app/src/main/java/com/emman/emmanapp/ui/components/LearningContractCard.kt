@@ -42,7 +42,7 @@ fun LearningContractCard(
             containerColor = cardColor
         )
     ) {
-        Column {
+        Column(modifier = Modifier.padding(bottom = 8.dp)) {
             Text(
                 title,
                 textAlign = TextAlign.Center,
