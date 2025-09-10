@@ -20,11 +20,18 @@ import androidx.compose.ui.unit.dp
 fun LearningContractCard(
     title: String,
     bulletPoints: List<String>,
-    modifier: Modifier = Modifier
     modifier: Modifier = Modifier,
     cardColor: Color = MaterialTheme.colorScheme.surfaceVariant
 ) {
-    Card(modifier = modifier) {
+    Card(
+        modifier = modifier,
+        shape = RoundedCornerShape(16.dp),
+        border = BorderStroke(2.dp, Color.Red),
+        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = cardColor
+        )
+    ) {
         Column {
             Text(
                 title,
