@@ -56,9 +56,15 @@ class MainActivity : ComponentActivity() {
                         verticalArrangement = Arrangement.spacedBy(16.dp),
                     ) {
                         learningContractPoints.forEach { (title, points) ->
+                            val colorForCard = when (title) {
+                                stringResource(R.string.members_title) -> MaterialTheme.colorScheme.tertiaryContainer
+                                else -> MaterialTheme.colorScheme.surfaceVariant
+                            }
+
                             LearningContractCard(
                                 title = title,
                                 bulletPoints = points,
+                                cardColor = colorForCard,
                                 modifier = Modifier
                                     .fillMaxWidth()
                             )
