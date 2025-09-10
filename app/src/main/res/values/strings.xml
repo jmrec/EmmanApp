@@ -1,3 +1,49 @@
 <resources>
     <string name="app_name">EmmanApp</string>
+
+    <string name="expectations_title">Expectations</string>
+    <string name="contributions_title">Contributions</string>
+    <string name="motivations_title">Motivations</string>
+    <string name="hindrances_title">Hindrances</string>
+    <string name="members_title">Members</string>
+
+    <string-array name="expectations">
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac ante efficitur, rhoncus purus et, cursus justo. Etiam in dui non eros fringilla tempus nec.</item>
+        <item>second</item>
+        <item>third</item>
+        <item>fourth</item>
+        <item>fifth</item>
+    </string-array>
+
+    <string-array name="contributions">
+        <item>first</item>
+        <item>second</item>
+        <item>third</item>
+        <item>fourth</item>
+        <item>fifth</item>
+    </string-array>
+
+    <string-array name="motivations">
+        <item>first</item>
+        <item>second</item>
+        <item>third</item>
+        <item>fourth</item>
+        <item>fifth</item>
+    </string-array>
+
+    <string-array name="hindrances">
+        <item>first</item>
+        <item>second</item>
+        <item>third</item>
+        <item>fourth</item>
+        <item>fifth</item>
+    </string-array>
+
+    <string-array name="members">
+        <item>Carino, Ian Kyril</item>
+        <item>Gaddi, Noel</item>
+        <item>Molina, Trisha</item>
+        <item>Recondo, Juan Miguel</item>
+        <item>Tungcul, Marjorie</item>
+    </string-array>
 </resources>
