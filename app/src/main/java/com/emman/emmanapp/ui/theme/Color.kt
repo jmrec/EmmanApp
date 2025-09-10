@@ -9,3 +9,9 @@ val Pink80 = Color(0xFFEFB8C8)
 val Purple40 = Color(0xFF6650a4)
 val PurpleGrey40 = Color(0xFF625b71)
 val Pink40 = Color(0xFF7D5260)
+
+val CardBackgroundLight = Color(0xFFF0F2F5)
+val CardBackgroundDark = Color(0xFF2A2E34)
+
+val MembersCardLight = Color(0xFFE0E8F0)
+val MembersCardDark = Color(0xFF38404D)
