@@ -4,13 +4,21 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.border
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringArrayResource
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.dp
+import com.emman.emmanapp.ui.components.LearningContractCard
 import com.emman.emmanapp.ui.theme.EmmanAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,29 +27,33 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             EmmanAppTheme {
+                val learningContractPoints = mapOf(
+                    stringResource(R.string.expectations_title) to stringArrayResource(R.array.expectations).toList(),
+                    stringResource(R.string.contributions_title) to stringArrayResource(R.array.contributions).toList(),
+                    stringResource(R.string.motivations_title) to stringArrayResource(R.array.motivations).toList(),
+                    stringResource(R.string.hindrances_title) to stringArrayResource(R.array.hindrances).toList(),
+                    stringResource(R.string.members_title) to stringArrayResource(R.array.members).toList()
+                )
+
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    Column(
+                        modifier = Modifier
+                            .padding(innerPadding)
+                            .verticalScroll(rememberScrollState()),
+                        verticalArrangement = Arrangement.spacedBy(16.dp)
+                    ) {
+                        learningContractPoints.forEach { (title, points) ->
+                            LearningContractCard(
+                                title = title,
+                                bulletPoints = points,
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .border(width = 2.dp, color = Color.Red)
+                            )
+                        }
+                    }
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    EmmanAppTheme {
-        Greeting("Android")
     }
 }
